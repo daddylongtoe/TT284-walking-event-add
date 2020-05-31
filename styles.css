@@ -1,0 +1,38 @@
+* {
+  /* reset browser CSS defaults */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* reset root font-size to 10px */
+  font-size: 10px;
+}
+
+.main-container {
+  margin: auto;
+  width: 102.4rem;
+}
+
+.ou-logo,
+.main-heading {
+  float: left;
+}
+
+.sign-out {
+  float: right;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.add-event {
+  width: 70%;
+  margin: auto;
+}
+
+.add-event .add-event-buttons {
+  float: right;
+}

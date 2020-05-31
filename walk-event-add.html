@@ -4,71 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="grid.css">
   <title>OU Walking Club Admin | Add Walk Event</title>
 </head>
 
-<body class="main-container">
-  <header class="main-header">
-    <a href="/" class="ou-logo-link">
-      <img class="ou-logo-img" src="./img/oulogo.jpg" alt="OU Logo">
-    </a>
-    <h1 class="main-header__heading">OU Walking Club</h1>
-    <a href="#" class="sign-out">Sign out</a>
-  </header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="#" class="navbar-active">Walk Events</a></li>
-      <li><a href="#">Other Events</a></li>
-      <li><a href="#">Membership</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Announcements</a></li>
-      <li><a href="#">Security</a></li>
-    </ul>
-  </nav>
-
-  <section class="section-breadcrumb">
-    <a href="/">Breadcrumb</a> > <a href="/">Breadcrumb</a> > <a href="/">Breadcrumb</a>
-  </section>
-
-  <main class="add-event">
-    <h3>Please enter event details...</h3>
-    <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="POST" class="add-event-form">
-      <input type="hidden" name="sessionId" value="12345678-09ab-1111-cdef">
-      <label class="form-label">Event Name</label>
-      <input type="text" class="form-input">
-      <label class="form-label">Event Date</label>
-      <input type="date" class="form-input">
-      <label class="form-label">Start time</label>
-      <input type="time" class="form-input">
-      <label class="form-label">Meeting point</label>
-      <input type="text" class="form-input">
-      <label class="form-label">Distance in miles</label>
-      <input type="number" class="form-input">
-      <label class="form-label">Notes</label>
-      <input type="text" class="form-input">
-      <label class="form-label">Status</label>
-
-      <div class="section-event-details__status-radio">
-        <input type="radio" name="status">
-        <label class="form-label">Proposed</label>
-        <input type="radio" name="status">
-        <label class="form-label">Approved</label>
-        <input type="radio" name="status">
-        <label class="form-label">Rejected</label>
+<body>
+  <div class="main-container">
+    <header class="main-header row">
+      <div class="col-1-of-4">
+        <a href="/" class="ou-logo">
+          <img class="ou-logo-img" src="./img/oulogo.jpg" alt="OU Logo">
+        </a>
       </div>
-      <div class="add-event-buttons">
-        <button class="button" type="submit">Create Event</button>
-        <a href="#" class="button">Cancel</a>
+      <div class="col-2-of-4">
+        <h1 class="main-heading">OU Walking Club</h1>
       </div>
-    </form>
-  </main>
+      <div class="col-1-of-4">
+        <a href="#" class="sign-out">Sign out</a>
+      </div>
+    </header>
 
-  <footer class="site-footer">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#" class="navbar-active">Walk Events</a></li>
+        <li><a href="#">Other Events</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Announcements</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+    </nav>
 
-  </footer>
+    <section class="breadcrumbs">
+      <a href="/">Breadcrumb</a> > <a href="/">Breadcrumb</a> > <a href="/">Breadcrumb</a>
+    </section>
+
+    <main class="add-event">
+      <h3>Please enter event details...</h3>
+      <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="POST" class="add-event-form">
+        <input type="hidden" name="sessionId" value="12345678-09ab-1111-cdef">
+        <div class="row">
+          <label class="form-label">Event Name</label>
+          <input type="text" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Event Date</label>
+          <input type="date" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Start time</label>
+          <input type="time" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Meeting point</label>
+          <input type="text" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Distance in miles</label>
+          <input type="number" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Notes</label>
+          <input type="text" class="form-input">
+        </div>
+        <div class="row">
+          <label class="form-label">Status</label>
+        </div>
+        <div class="status-radio-buttons row">
+          <input type="radio" name="status">
+          <label class="form-label">Proposed</label>
+          <input type="radio" name="status">
+          <label class="form-label">Approved</label>
+          <input type="radio" name="status">
+          <label class="form-label">Rejected</label>
+        </div>
+        <div class="add-event-buttons row">
+          <button class="button" type="submit">Create Event</button>
+          <a href="#" class="button">Cancel</a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="row">
+        <p class="footer-text">&copy; 2020. All rights reserved</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
