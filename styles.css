@@ -24,6 +24,10 @@ body {
   min-height: 100vh;
 }
 
+.content-wrap {
+  padding-bottom: 7rem;
+}
+
 .main-header {
   padding: 1rem;
 }
@@ -43,6 +47,7 @@ body {
   float: right;
   text-decoration: none;
   color: #333;
+  padding-right: 0.5rem;
 }
 
 .sign-out:hover {
@@ -193,12 +198,11 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 7rem;
-  padding-bottom: 2.5rem;
-  /* padding: 2.5rem 0 2.5rem 2rem; */
+  height: 5rem;
+  /* padding-bottom: 2.5rem; */
   background-color: lightgrey;
 }
 
 .footer-text {
-  padding: 2rem;
+  padding: 1rem;
 }
