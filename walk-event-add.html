@@ -85,21 +85,24 @@
                   <textarea id="notes" placeholder="Enter any event notes here"></textarea>
                 </li>
                 <li>
-                  <p>Status:</p>
-                  <ul class="flex-inner">
-                    <li>
-                      <input type="radio" id="proposed" name="status">
-                      <label for="proposed" class="form-label">Proposed</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="approved" name="status">
-                      <label for="approved" class="form-label">Approved</label>
-                    </li>
-                    <li>
-                      <input type="radio" id="rejected" name="status">
-                      <label for="rejected" class="form-label">Rejected</label>
-                    </li>
-                  </ul>
+                  <fieldset class="radio-fieldset">
+                    <legend class="fieldset-legend">Status</legend>
+                    <!--<p>Status:</p>-->
+                    <ul class="flex-inner">
+                      <li>
+                        <label for="proposed" class="form-label">Proposed</label>
+                        <input type="radio" id="proposed" name="status">
+                      </li>
+                      <li>
+                        <label for="approved" class="form-label">Approved</label>
+                        <input type="radio" id="approved" name="status">
+                      </li>
+                      <li>
+                        <label for="rejected" class="form-label">Rejected</label>
+                        <input type="radio" id="rejected" name="status">
+                      </li>
+                    </ul>
+                  </fieldset>
                 </li>
                 <li>
                   <button class="button" type="submit">Create Event</button>

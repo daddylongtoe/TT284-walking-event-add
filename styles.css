@@ -47,7 +47,7 @@ body {
   float: right;
   text-decoration: none;
   color: #333;
-  padding-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .sign-out:hover {
@@ -133,7 +133,7 @@ body {
 }
 
 .flex-inner {
-  padding: 1rem 8px;
+  padding: 0 3rem 1rem 3rem;
   justify-content: space-between;
 }
 
@@ -151,7 +151,7 @@ body {
 .flex-outer li input,
 .flex-outer li textarea {
   padding: 0.6rem;
-  width: 40rem;
+  width: 42rem;
   height: 3.6rem;
 }
 
@@ -188,6 +188,17 @@ body {
 
 .flex-inner li {
   width: 10rem;
+}
+
+.radio-fieldset {
+  width: 100%;
+  border: 0;
+  border: 1px solid #767676;
+  margin-bottom: 1rem;
+}
+
+.fieldset-legend {
+  padding: 0 0.5rem;
 }
 
 .button {
