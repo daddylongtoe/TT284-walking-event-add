@@ -306,7 +306,7 @@ body {
     float: right;
     text-decoration: none;
     color: #333;
-    margin: 2.1rem 3rem 0 0;
+    margin: 2.1rem 2rem 0 0;
     padding: 0.5rem 2rem;
     border: 1px solid #333;
     border-radius: 5px;
@@ -325,13 +325,13 @@ body {
   }
 
   .overview-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .add-event {
     width: 95%;
     margin: auto;
-    margin-top: 3rem;
+    /* margin-top: 1rem; */
     padding: 3rem;
     border: 0;
     border-radius: 0.5rem;
