@@ -10,29 +10,195 @@ html {
   font-size: 10px;
 }
 
-.main-container {
-  margin: auto;
-  width: 102.4rem;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
 }
 
-.ou-logo,
+.main-container {
+  position: relative;
+  margin: auto;
+  width: 102.4rem;
+  min-height: 100vh;
+}
+
+.main-header {
+  padding: 1rem;
+}
+
+#ou-logo,
 .main-heading {
   float: left;
 }
 
-.sign-out {
+#ou-logo {
+  padding-left: 0.5rem;
+}
+
+.sign-out,
+.sign-out:active,
+.sign-out:visited {
   float: right;
+  text-decoration: none;
+  color: #333;
+}
+
+.sign-out:hover {
+  border-bottom: 1px solid #333;
+}
+
+.navbar {
+  background-color: lightgrey;
+  padding: 1rem 0;
 }
 
 .navbar li {
   display: inline;
+  margin: 0 1.5rem;
+  height: 1.7rem;
+}
+
+.navbar li a,
+.navbar li a:active,
+.navbar li a:visited {
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.navbar-active {
+  border-bottom: 4px solid #333;
+}
+
+.breadcrumbs {
+  padding: 1rem 0;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:active,
+.breadcrumbs a:visited {
+  text-decoration: none;
+  color: #333333;
+  margin: 0 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.breadcrumbs a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.overview-heading {
+  padding: 0.5rem 1.5rem;
+}
+
+.overview-text {
+  padding: 0.5rem 1.5rem;
 }
 
 .add-event {
-  width: 70%;
+  width: 60%;
   margin: auto;
+  margin-top: 3rem;
+  padding: 2rem;
+  border: 1px solid lightgrey;
 }
 
-.add-event .add-event-buttons {
-  float: right;
+.add-event-sub-heading {
+  padding: 0 0 1rem 0.8rem;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+.flex-inner {
+  padding: 1rem 8px;
+  justify-content: space-between;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 15rem;
+}
+
+.flex-outer li input,
+.flex-outer li textarea {
+  padding: 0.6rem;
+  width: 40rem;
+  height: 3.6rem;
+}
+
+.flex-inner li input[type="radio"] {
+  padding: 0.6rem;
+  height: 1.5rem;
+}
+
+.flex-inner li label {
+  padding: 0.5rem 0;
+  width: 10rem;
+  text-align: center;
+}
+
+#notes {
+  height: 7rem;
+  font-size: 1.6rem;
+}
+
+.flex-outer li input[type="date"],
+.flex-outer li input[type="time"],
+.flex-outer li input[type="number"] {
+  width: 15rem;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 10rem;
+}
+
+.button {
+  font-size: 1.6rem;
+}
+
+.site-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 7rem;
+  padding-bottom: 2.5rem;
+  /* padding: 2.5rem 0 2.5rem 2rem; */
+  background-color: lightgrey;
+}
+
+.footer-text {
+  padding: 2rem;
 }
